@@ -1,0 +1,11 @@
+[package]
+name = "raffaello"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+members = [".", "crates/raffaello-core", "crates/raffaello-macros"]
+
+[dependencies]
+raffaello-core = { path = "crates/raffaello-core" }
+raffaello-macros = { path = "crates/raffaello-macros" }
