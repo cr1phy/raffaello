@@ -1,7 +1,7 @@
-use raffaello::{Draw, draw};
+use raffaello::{draw, run, View};
 
 #[component(App)]
-fn app() -> Draw {
+fn app() -> View {
     draw! {
         p { "Hello, world" }
         block [title="blak"] {
@@ -11,5 +11,5 @@ fn app() -> Draw {
 }
 
 fn main() {
-    run!(App)
+    run!(App, Inline)
 }
